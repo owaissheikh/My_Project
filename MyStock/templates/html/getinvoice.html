@@ -1,0 +1,28 @@
+<html>     
+    <head>         
+    <title>Book Search</title>     
+ 
+
+    </head>     
+    <body>       
+        <p>iid: <strong>{{ query1 }}</strong></p>
+        <p>pid <strong>{{ query2 }}</strong></p>
+        <p>pname: <strong>{{ query3 }}</strong></p>
+        <p>mno: <strong>{{ query4 }}</strong></p>
+        <p>color: <strong>{{ query5 }}</strong></p>
+        <p>size: <strong>{{ query6 }}</strong></p>
+        <p>price: <strong>{{ query7 }}</strong></p>
+        <p>quantity: <strong>{{ query8 }}</strong></p>
+        <p>cname: <strong>{{ query9 }}</strong></p>
+        <p>email: <strong>{{ query10 }}</strong></p>
+        <p>mono: <strong>{{ query11 }}</strong></p>
+        <p>add: <strong>{{ query12 }}</strong></p>
+		<P>query<strong>{{ Resultset.value }}</strong></p>
+		<center>
+		{% for e in Resultset %}
+		<h1>{{ e.id }}</h1>
+		
+		{%  endfor %}
+		</center>
+    </body>
+</html>

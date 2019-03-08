@@ -1,0 +1,18 @@
+<html>     
+    <head>         
+    <title>Book Search</title>     
+ 
+
+    </head>     
+    <body>       
+        <p>Name: <strong>{{ query }}</strong></p>
+        <p>Id: <strong>{{ query1 }}</strong></p>
+		<P>query<strong>{{ Resultset.value }}</strong></p>
+		<center>
+		{% for e in Resultset %}
+		<h1>{{ e.id }}</h1>
+		
+		{%  endfor %}
+		</center>
+    </body>
+</html>
